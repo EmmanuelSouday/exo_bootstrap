@@ -6,30 +6,48 @@
           <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
           <link rel="stylesheet" href="style.css">
           <style type="text/css">
-        .col-lg-2 { line-height: 100px; }
-        .col-lg-5 { line-height: 200px; }
-        .col-lg-12 { line-height: 80px; }
+            body{padding-top: 70px}
+            .inline-form input
+            { display:inline-block;
+                width: 100px
+            }
           </style>
 
 </head>
 
 <body>
-    <div class="row">
-<div class="col-sm-10">
-Partie 1
-<div class="row">
-<div class="col-xs-6 col-sm-8">
-   Partie 2
-</div>
-<div class="col-xs-6 col-sm-4">
-   Partie 3
-</div>
-</div>
-</div>
-</div>
+<div class="container-fluid">
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-static-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mon beau site</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Acceuil</a></li>
+            <li><a href="#">liens</a></li>
+            <li><a href="#">Temoignages</a></li>
+            <li class="disabled"><a href="#">Réferences</a></li>
+            <li><a href="#">Bibliographie</a></li>
+        </ul>
+        <form class="navbar-form navbar-right inline-form">
+            <div class="form-group">
+                <input type="search" class="imput-sm form-control" placeholder="Recherche">
+                <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher </button>
 
 
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-3">
+        <ul class="pagination pagiation-lg">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
 
+    </div>
+</div>
 
 
 
