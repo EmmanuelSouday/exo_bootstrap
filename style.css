@@ -9,5 +9,10 @@ code
 {
     font-size: 1.1em;
     font-style: italic;
-    
+    background-color: #FFDCDC;
+}
+
+li
+{
+    list-style:circle;
 }
