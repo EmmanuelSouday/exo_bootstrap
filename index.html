@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cheatsheet bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bloc_page" class="container-fluide"> <!--**************************************** début du page ***********************************************-->
+
+    <!--*************************************************************************navbar*************************************************************-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#un">Partie 1</a> </li>
+                    <li> <a href="#deux">Partie 2</a> </li>
+                    <li> <a href="#trois">Partie 3</a> </li>
+                    <li> <a href="#quatre">Partie 4</a> </li>
+                    <li> <a href="#cinq">Partie 5</a></li>
+                    <li> <a href="#six">Partie 6</a></li>
+                    <li> <a href="#sept">Partie 7</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--***********************************************************header************************************************************-->
+        <header class="page-header col-lg-12">
+            <h1 class="col-lg-offset-4 col-lg-4">Cheatsheet Bootstrap</h1>
+        </header>
+
+    <!--************************************************************premier bloc************************************************************-->
+        <div class="container">
+            <div class="row col-lg-12">
+                <h2 id="un">Partie 1</h2>
+                    <ul>
+                        <li><code>&lt;row&gt;</code> cette class représente une rangée.</li>
+                        <li><code>&lt;col&gt;</code> cette class représente une colonne , on dispose de 4 bateries: <code>&lt;col-xs-1&gt;</code> ou
+                             <code>&lt;col-sm-1&gt;</code> ou<code>&lt;col-md-1&gt;</code> ou <code>&lt;col-lg-1&gt;</code></li>
+                        <li><code>&lt;container&gt;</code> contient et centre la grille sur une largeur fixe, qui s'adapte en fonction de la largeur de
+                             l'écran</li>
+                        <li><code>&lt;container-fluide&gt;</code> permet à la grille d'occuper toute la largeur.</li>
+                        <li><code>&lt;col-*-offset-1&gt;</code>permet aussi de sauter des colonnes.</li>
+                        <li><code>&lt;col-lg-push-*&gt;</code>permet de décaler une colonne vers la droite</li>
+                        <li><code>&lt;col-lg-pull-*&gt;</code>permet de décaler une colonne vers la gauche</li>
+                    </ul>
+            </div>
+    <!--*********************************************************dexieme blocs****************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="deux">Partie 2</h2>
+                    <ul>
+                        <li><code>&lt;blockquote&gt;</code> permet de mettre en valeur un block de texte </li>
+                        <li><code>&lt;adress&gt;</code> permet de mettre une apparence d'adresse</li>
+                        <li><code>&lt;clearfix&gt;</code> réinitialise les éléments flottants qui suivent pour les ramener dans le flux normal, et
+                             éviter qu'ils viennent recouvrir les éléments précédents</li>
+                        <li><code>&lt;visible-*&gt;</code> et <code>&lt;hidden-*&gt;</code>:
+                            <figure>
+                                <img class="col-lg-6 col-sm-12"src="images/visiblehidden.JPG" alt="tableau des effet de visible et hidden"/>
+                                <img class="col-lg-6"src="images/classesdevisibilite.JPG" alt="tableau des class de visibilité"/>
+                            </figure>
+                        </li>
+                    </ul>
+            </div>
+    <!--********************************************************troisieme blocs*****************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="trois">Partie 3</h2>
+                    <ul>
+                        <li><code>&lt;list-unstyled&gt;</code> à appliquer à la balise <code>&lt;ul&gt;</code>, supprime les puces</li>
+                        <li><code>&lt;list-inline&gt;</code> permet d'avoir une liste en ligne </li>
+                        <li><code>&lt;dl-horizontal&gt;</code> permet d'avoir une description horrizontal</li>
+                        <li><code>&lt;table&gt;</code>fixe quelques styles et crée des lignes de séparation horizontales </li>
+                        <li><code>&lt;table-bordered&gt;</code> c'est la classe pour avoir des bordures </li>
+                        <li><code>&lt;table-striped&gt;</code> cette classe ajoute un fond avec un gris très léger pour les lignes impaires (1, 3,
+                             …)</li>
+                        <li><code>&lt;table-condensed&gt;</code> cette classe permet de condenser le tableau pour qu'il occupe moins de place
+                            verticalement</li>
+                        <li><code>&lt;table-responsive&gt;</code> fait apparaître une barre de défilement</li>
+                        <li><code>&lt;info&gt; &lt;success&gt; &lt;danger&gt; &lt;warning&gt; &lt;active&gt;</code> permet de colorier le fond des
+                             lignes </li>
+                    </ul>
+            </div>
+    <!--**********************************************************quatrieme blocs**************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="quatre">Partie 4</h2>
+                    <ul>
+                        <li><code>&lt;form&gt;</code> créer un formulaire</li>
+                        <li><code>&lt;form-control&gt;</code> permet que les contrôles occupent toute la largeur disponible</li>
+                        <li><code>&lt;form-group&gt;</code> permet d'améliorer l'espacement </li>
+                        <li><code>&lt;well&gt;</code> ajoute une jolie stylisation</li>
+                        <li><code>&lt;help-block&gt;</code> rendre plus discret le texte d'aide situé au-dessous de la zone de texte</li>
+                        <li><code>&lt;form-horizontal&gt;</code>permet de placer un formulaire horizontalement</li>
+                        <li><code>&lt;form-inline&gt;</code> styliser et reduire la largeur*(au dessus de 768px) du contenus  </li>
+                        <li><code>&lt;input-lg&gt;</code>et<code>&lt;input-sm&gt;</code> permet d'ajuster la taille d'un formulaire </li>
+                        <li><code>&lt;input-group&gt;</code> et <code>&lt;input-group-addon&gt;</code> servent à accoler une information à un contrôle
+                             de formulaire :</li>
+                            <img src="images/addon.png" alt="image d'un input-addon"/>
+                        <li class="col-lg-12"><code>&lt;has-feedback&gt;&lt;form-control-feedback&gt;</code>:</li>
+                            <img src="images/feedback.png" alt="" />
+                    </ul>
+            </div>
+<!--*************************************************************cinquième blocs********************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="cinq">Partie 5</h2>
+                    <ul>
+                        <li><code>&lt;img-responsive&gt;</code> pour rendre l'image responsive</li>
+                        <li><code>&lt;img-rounded&gt;</code> coins arrondis</li>
+                        <li><code>&lt;img-circle&gt;</code> image arondi</li>
+                        <li><code>&lt;img-thumbnail&gt;</code> image avec un lisséré blanc</li>
+                        <li><code>&lt;btn&gt; &lt;btn-default&gt;</code> dans une balise, <code>&lt;button&gt;</code>,<code>&lt;a&gt;</code> ou
+                            <code>&lt;input&gt;</code> Pour créer un bouton avec Bootstrap </li>
+                        <li><code>&lt;btn-block&gt;</code> règle la dimension du bouton sur la dimension de son contenant. </li>
+                        <li><code>&lt;btn-group&gt;</code> et <code>&lt;btn-group-vertical&gt;</code> grouper des boutons horizontalement et
+                             verticalement</li>
+                        <li><code>&lt;btn-group-jutified&gt;</code> avec <code>&lt;btn-group&gt;</code>répartis harmonieusement et uniformément dans un
+                             contenant</li>
+                        <li><code>&lt;glyphicon&gt;</code>:</li>
+                            <img src="images/glyphicon.png" alt="" />
+                    </ul>
+            </div>
+<!--***************************************************************sixième blocs*******************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="six">Partie 6</h2>
+                    <ul>
+                        <li><code>&lt;navbar&gt;</code> navbar simple</li>
+                        <li><code>&lt;navbar navbar-default&gt; &lt;navbar navbar-inverse&gt;</code> navbar claire / navbar noire</li>
+                        <li><code>&lt;nav navbar-nav&gt;</code>doivent être utilisées avec une balise <code>&lt;ul&gt;</code>. Tous les items de
+                             navigation apparaissent alors avec des balises <code>&lt;li&gt;</code></li>
+                        <li><code>&lt;navbar-header&gt;</code> le titre doit être inclut dans cette balise pour avoir un bn rendu sur les mobiles</li>
+                        <li><code>&lt;navbar-fixed-top&gt;</code>fixer la barre en haut de la page du navigateur</li>
+                        <li><code>&lt;navbar-form&gt; dans une &lt;form&gt;</code>Pour intégrer un formulaire. <code>&lt;navbar-right&gt;</code> pour
+                             le fixer à droite <code>&lt;navbar-left&gt;</code> pour le fixer à gauche</li>
+                        <li><code>&lt;inline-form&gt;</code> pour reduire la largeur (modifie le display)</li>
+                        <li><code>&lt;navbar-btn&gt;</code> pour intégrer un bouton dans une barre, mais qui doit être utilisée uniquement si le bouton
+                             n'appartient pas à un formulaire</li>
+                        <li><code>&lt;navbar-text&gt;</code> pour insérer du texte et la classe <code>&lt;navbar-link&gt;</code> pour afficher un lien
+                             en dehors du menu (non inclu dans la classe nav).</li>
+                        <li><code>&lt;pagination</code> sert à réaliser des paginations</li>
+                        <li><code>&lt;pager&gt;</code> autres styles de paginations , ils sont centrés par défaut. Peuvent etre combinés avec
+                             <code>&lt;previous&gt;</code> et <code>&lt;next&gt;</code></li>
+                        <li><code>&lt;breadcrumb&gt;</code>dans <code>&lt;ul&gt;</code> aide à la navigation ( façon paination )</li>
+                    </ul>
+            </div>
+<!--***************************************************************septième bloc*****************************************************************-->
+            <div class="row col-lg-12">
+                <h2 id="sept">Partie 7</h2>
+                    <ul>
+                        <li><code>&lt;jumbotron&gt;</code> dans <code>&lt;container&gt;</code>permet de rendre le texte très visible (sorte de
+                             panneau).</li>
+                        <li><code>&lt;label-success&gt;</code>dans<code>&lt;span&gt;</code> permet de créer des libellés colorer </li>
+                        <li><code>&lt;badge&gt;</code> pour des informations plus courtes, idéalement des nombres</li>
+                        <li><code>&lt;tumbnail&gt;</code>mettre stylisé une/des images</li>
+                        <li><code>&lt;list-group&gt;</code>dans <code>&lt;ul&gt;</code> et <code>&lt;list-group-item&gt;</code>dans
+                             <code>&lt;li&gt;</code>permet de faire des listes groupées</li>
+                        <li><code>&lt;list-group-item-heading&gt;</code><code>&lt;list-group-item-text&gt;</code>:</li>
+                            <img src="images/listentete.png"/>
+                        <li><code>&lt;panel panel-primary&gt;</code> permet d'isoler du contenu dans un panel</li>
+                        <li><code>&lt;panel-heading&gt;</code> même principe que le header mais dans un panel , utiliser le plus souvent pour mettre le
+                             <code>&lt;panel-title&gt;</code>metre un titre au panel</li>
+                        <li><code>&lt;media&gt;</code>:</li>
+                            <img src="images/media.png"/>
+                        <li><code>&lt;alert&gt;</code><code>alert-warning</code>Les alertes permettent de présenter un message visuellement significatif.</li>
+                        <li><code>&lt;alert-link&gt;</code>permet d'insérer un lien esthétique dans une alerte</li>
+                        <li><code>alert-dismissable</code> on peut avoir envie de fermer l'alerte . Il suffit de prévoir un bouton et d'ajouter la
+                             classe. </li>
+                        <li><code>&lt;progress&gt;</code>et<code>&lt;progress-bar&gt;</code>permet de réaliser une barre de progression</li>
+                        <li><code>&lt;progress progress-bar-striped&gt;</code> barre de progression rayée</li>
+                    </ul>
+            </div>
+        </div>
+    </div> <!--*************************************************fin du bloc page ***************************************************************-->
+</body>
+
+</html>
